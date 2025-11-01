@@ -1,0 +1,9 @@
+a:hover{
+    color:blue;
+}
+a:active{
+    color: crimson;
+}
+a{
+    background-color: aliceblue;
+}

@@ -1,0 +1,56 @@
+.main{
+    width: 1260px;
+    display: flex;
+    background-color: black;
+    gap: 90px;
+    color: white;
+    padding: 40px;
+    margin-right: 10px;
+}
+span{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.con1{
+    margin-left: 30px;
+}
+.con2{
+    margin-left:40px ;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    gap: 70px;
+}
+.con2 input{
+    width: 180px;
+    border-radius: 30px;
+}
+a{
+font-size: larger;
+color: white;
+text-decoration: none;
+}
+a:hover{
+    font-size:20px;
+    color:green ;
+}
+.img img{
+    width: 1330px;
+    height: 600px;
+}
+.main2,.main3,.main4,.main5{
+    display: flex;
+        gap: 50px;
+}
+.div img{
+    margin-top: 60px;
+    margin-left: 20px;
+    height: 500px;
+    width: 240px;
+}
+.div{
+    background-color: rgba(255, 252, 252, 0.828);
+}
+.div:hover{
+    transform: scale(1.1);
+}

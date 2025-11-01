@@ -1,0 +1,96 @@
+body {
+  background-image: url("assets/OIP\ \(2\).webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main1 {
+  display: flex;
+  background-color: red;
+  color: white;
+  gap: 630px;
+  font-size: large;
+  padding: 30px;
+
+}
+.con1 {
+  margin-left: 60px;
+}
+.con2 i {
+    gap: 20px;
+  margin-right:22px;
+}
+.main2 {
+  display: flex;
+  gap: 540px;
+  padding: 30px;
+  background-color: white;
+}
+.Vacation {
+  color: black;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.rent {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: red;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.con4 a{
+  transition: 0.3s;
+  color: black;
+  font-size:22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  margin-right: 10px;
+  gap: 10px;
+}
+.con4 a:hover{
+    color: red;
+    text-decoration:double;
+}
+.main3 {
+  display: flex;
+  gap: 140px;
+  margin-left: 60px;
+}
+.con5 h3 {
+  color: white;
+}
+.con5 h1 {
+  font-size: 70px;
+  color: white;
+}
+table {
+  background-color: white;
+  padding: 5px;
+  width: 100px;
+  margin-top: 80px;
+}
+input{
+  color: black;
+  font-weight: 400px;
+  width: 150px;
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+select{
+  width: 167px;
+}
+table h2{
+  color: red;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+  color: white;
+  background-color: rgba(255, 0, 0, 0.906);
+  padding: 10px;
+  font-family: cursive;
+  font-size: x-large;
+  text-align: center;
+}
+button:hover{
+  cursor: pointer;
+}

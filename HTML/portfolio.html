@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Front-End Developer Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #1d3557;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      background: white;
+      margin: 24px auto;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+    .project {
+      border-left: 4px solid #1d3557;
+      padding-left: 12px;
+      margin-bottom: 14px;
+    }
+    footer {
+      text-align: center;
+      background: #e9ecef;
+      color: #1d3557;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    /* Skills Section */
+    .skill {
+      margin-bottom: 20px;
+    }
+    .skill-name {
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .skill-bar {
+      background: #d1d1d1;
+      border-radius: 8px;
+      height: 16px;
+      overflow: hidden;
+    }
+    .skill-level {
+      height: 100%;
+      background: #1d3557;
+      border-radius: 8px 0 0 8px;
+    }
+    .html { width: 100%; }
+    .css { width: 85%; }
+    .javascript { width: 80%; }
+    .bootstrap { width: 75%; }
+    .react { width: 70%; }
+    .express { width: 60%; }
+    .node { width: 65%; }
+    .mongodb { width: 60%; }
+    @media (max-width: 600px) {
+      section { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a full-stack developer skilled in front-end and back-end technologies. I build responsive, performant, and user-friendly web applications.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar"><div class="skill-level html"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar"><div class="skill-level css"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-level javascript"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Bootstrap</div>
+      <div class="skill-bar"><div class="skill-level bootstrap"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">React.js</div>
+      <div class="skill-bar"><div class="skill-level react"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Express.js</div>
+      <div class="skill-bar"><div class="skill-level express"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Node.js</div>
+      <div class="skill-bar"><div class="skill-level node"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">MongoDB</div>
+      <div class="skill-bar"><div class="skill-level mongodb"></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Travel Explorer</h3>
+      <p>A responsive travel site built using pure HTML and CSS, designed mobile-first.</p>
+    </div>
+    <div class="project">
+      <h3>Recipe Hub</h3>
+      <p>A simple recipe listing page with grid design and hover effects.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: johndoe@example.com</p>
+    <p>
+      <a href="https://github.com/johndoe" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 John Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
