@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+ 
+
+// FULL SWITCH CASE TASKS (BEGINNER FRIENDLY)
+// All switch-based tasks with simple code + comments
+
+//---------------------------------------------------------
+// 1. Check Positive or Negative Number (Switch Version)
+//---------------------------------------------------------
+let num = -5;
+switch (true) {
+  case (num > 0):
+    console.log("Positive");
+    break;
+  default:
+    console.log("Negative");
+}
+
+//---------------------------------------------------------
+// 2. Even or Odd
+//---------------------------------------------------------
+let n = 12;
+switch (n % 2) {
+  case 0:
+    console.log("Even");
+    break;
+  default:
+    console.log("Odd");
+}
+
+//---------------------------------------------------------
+// 3. Voting Eligibility
+//---------------------------------------------------------
+let age = 16;
+switch (true) {
+  case (age >= 18):
+    console.log("Eligible to Vote");
+    break;
+  default:
+    console.log("Not Eligible to Vote");
+}
+
+//---------------------------------------------------------
+// 4. Check Data Type (number/string/boolean)
+//---------------------------------------------------------
+let data = "Hello";
+switch (typeof data) {
+  case "number":
+    console.log("Number");
+    break;
+  case "string":
+    console.log("String");
+    break;
+  case "boolean":
+    console.log("Boolean");
+    break;
+}
+
+//---------------------------------------------------------
+// 5. Greater Number (Two Numbers)
+//---------------------------------------------------------
+let a = 40, b = 20;
+switch (true) {
+  case (a > b):
+    console.log("A is Greater");
+    break;
+  default:
+    console.log("B is Greater");
+}
+
+//---------------------------------------------------------
+// 6. Compare Two Strings
+//---------------------------------------------------------
+let s1 = "apple", s2 = "apple";
+switch (s1 === s2) {
+  case true:
+    console.log("Strings are Equal");
+    break;
+  default:
+    console.log("Strings are Not Equal");
+}
+
+//---------------------------------------------------------
+// 7. Check Multiples of 5
+//---------------------------------------------------------
+let val = 25;
+switch (val % 5) {
+  case 0:
+    console.log("Multiple of 5");
+    break;
+  default:
+    console.log("Not a Multiple of 5");
+}
+
+//---------------------------------------------------------
+// 8. Check Zero
+//---------------------------------------------------------
+let x = 0;
+switch (x) {
+  case 0:
+    console.log("Zero");
+    break;
+  default:
+    console.log("Not Zero");
+}
+
+//---------------------------------------------------------
+// 9. Pass or Fail (>=35)
+//---------------------------------------------------------
+let marks = 30;
+switch (true) {
+  case (marks >= 35):
+    console.log("Pass");
+    break;
+  default:
+    console.log("Fail");
+}
+
+//---------------------------------------------------------
+// 10. Temperature Check
+// <20 = Cold, 20–30 = Warm, >30 = Hot
+//---------------------------------------------------------
+let temp = 25;
+switch (true) {
+  case (temp < 20):
+    console.log("Cold");
+    break;
+  case (temp <= 30):
+    console.log("Warm");
+    break;
+  default:
+    console.log("Hot");
+}
+
+//---------------------------------------------------------
+// 11. Largest of Three Numbers
+//---------------------------------------------------------
+let p = 50, q = 70, r = 40;
+switch (true) {
+  case (p > q && p > r):
+    console.log("P is largest");
+    break;
+  case (q > p && q > r):
+    console.log("Q is largest");
+    break;
+  default:
+    console.log("R is largest");
+}
+
+//---------------------------------------------------------
+// 12. Check Leap Year
+//---------------------------------------------------------
+let year = 2024;
+switch (true) {
+  case ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0):
+    console.log("Leap Year");
+    break;
+  default:
+    console.log("Not a Leap Year");
+}
+
+//---------------------------------------------------------
+// 13. Character Type
+//---------------------------------------------------------
+let ch = "a";
+switch (true) {
+  case "aeiouAEIOU".includes(ch):
+    console.log("Vowel");
+    break;
+  case (ch >= "0" && ch <= "9"):
+    console.log("Number");
+    break;
+  case ((ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z")):
+    console.log("Consonant");
+    break;
+  default:
+    console.log("Special Character");
+}
+
+//---------------------------------------------------------
+// 14. Login Credentials
+//---------------------------------------------------------
+let user = "admin", pass = "1234";
+switch (true) {
+  case (user === "admin" && pass === "1234"):
+    console.log("Login Successful");
+    break;
+  default:
+    console.log("Invalid Credentials");
+}
+
+//---------------------------------------------------------
+// 15. Grade Check
+//---------------------------------------------------------
+let score = 85;
+switch (true) {
+  case (score >= 90): console.log("A Grade"); break;
+  case (score >= 80): console.log("B Grade"); break;
+  case (score >= 70): console.log("C Grade"); break;
+  default: console.log("Fail");
+}
+
+//---------------------------------------------------------
+// 16. Number Sign + Even/Odd
+//---------------------------------------------------------
+let numX = 9;
+switch (true) {
+  case (numX > 0 && numX % 2 === 0): console.log("Positive Even"); break;
+  case (numX > 0 && numX % 2 !== 0): console.log("Positive Odd"); break;
+  default: console.log("Negative Number");
+}
+
+//---------------------------------------------------------
+// 17. Valid String or Not
+//---------------------------------------------------------
+let str = "Hello";
+switch (true) {
+  case (typeof str === "string" && str !== ""):
+    console.log("Valid String");
+    break;
+  default:
+    console.log("Invalid String");
+}
+
+//---------------------------------------------------------
+// 18. Discount Calculation
+//---------------------------------------------------------
+let price = 600;
+switch (true) {
+  case (price > 1000): console.log("20% Discount"); break;
+  case (price > 500): console.log("10% Discount"); break;
+  default: console.log("No Discount");
+}
+
+//---------------------------------------------------------
+// 19. Compare == and ===
+//---------------------------------------------------------
+let v1 = 10, v2 = "10";
+switch (true) {
+  case (v1 == v2): console.log("== : equal values");
+}
+switch (true) {
+  case (v1 === v2): console.log("=== : strictly equal"); break;
+  default: console.log("=== : not strictly equal");
+}
+
+//---------------------------------------------------------
+// 20. Simple Calculator
+//---------------------------------------------------------
+let numA = 10, numB = 5, op = "+";
+switch (op) {
+  case "+": console.log(numA + numB); break;
+  case "-": console.log(numA - numB); break;
+  case "*": console.log(numA * numB); break;
+  case "/": console.log(numA / numB); break;
+  default: console.log("Invalid Operator");
+}
+    </script>
+</body>
+</html>
