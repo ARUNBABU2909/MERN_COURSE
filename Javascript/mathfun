@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1. Random number 1-100
+console.log(Math.floor(Math.random()*100)+1);
+
+// 2. Round to 2 decimals
+let n2 = 12.3456;
+console.log(Number(n2.toFixed(2)));
+
+// 3. Max & Min
+let arr3 = [10,55,2,99];
+console.log(Math.max(...arr3));
+console.log(Math.min(...arr3));
+
+// 4. Square root of each
+let arr4m = [4,9,16];
+for (let i=0;i<arr4m.length;i++){
+    console.log(Math.sqrt(arr4m[i]));
+}
+
+// 5. Random number 50-200
+console.log(Math.floor(Math.random()*151)+50);
+
+// 6. Absolute difference
+console.log(Math.abs(10 - 25));
+
+// 7. Dice roll
+console.log(Math.floor(Math.random()*6)+1);
+
+// 8. Compound interest
+let p=1000,r=5,t=2;
+let ci = p * (Math.pow((1+r/100), t)) - p;
+console.log(ci);
+
+// 9. Area of circle
+let r9 = 5;
+console.log(Math.PI * r9 * r9);
+
+// 10. Perfect square
+let n10 = 49;
+console.log(Number.isInteger(Math.sqrt(n10)));
+
+// 11. Ceil and floor
+console.log(Math.ceil(4.3));
+console.log(Math.floor(4.8));
+
+// 12. Power a^b
+console.log(Math.pow(2,5));
+
+// 13. 10 random numbers avg
+let sum13=0;
+for(let i=0;i<10;i++){
+    sum13 += Math.floor(Math.random()*100)+1;
+}
+console.log(sum13/10);
+
+// 14. Radians <-> Degrees
+let rad = 1;
+let deg = rad * (180/Math.PI);
+console.log(deg);
+
+let deg2 = 180;
+let rad2 = deg2 * (Math.PI/180);
+console.log(rad2);
+
+// 15. Factorial
+let n15 = 5;
+let f15 = 1;
+for(let i=1;i<=n15;i++){ f15 *= i; }
+console.log(f15);
+
+    </script>
+</body>
+</html>
