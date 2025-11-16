@@ -1,0 +1,245 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        
+ 
+// FULL IF-ELSE TASKS (BEGINNER FRIENDLY)
+// All questions covered with simple code + comments
+
+//-----------------------------------------------------
+// 1. Check Positive or Negative
+//-----------------------------------------------------
+let num = -5;
+if (num > 0) {
+  console.log("Positive");
+} else {
+  console.log("Negative");
+}
+
+//-----------------------------------------------------
+// 2. Check Even or Odd
+//-----------------------------------------------------
+let n = 12;
+if (n % 2 === 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
+}
+
+//-----------------------------------------------------
+// 3. Voting Eligibility
+//-----------------------------------------------------
+let age = 17;
+if (age >= 18) {
+  console.log("Eligible to Vote");
+} else {
+  console.log("Not Eligible to Vote");
+}
+
+//-----------------------------------------------------
+// 4. Check Data Type (number, string, boolean)
+//-----------------------------------------------------
+let data = true;
+if (typeof data === "number") {
+  console.log("Number");
+} else if (typeof data === "string") {
+  console.log("String");
+} else if (typeof data === "boolean") {
+  console.log("Boolean");
+}
+
+//-----------------------------------------------------
+// 5. Check Greater Number (Two Numbers)
+//-----------------------------------------------------
+let a = 30, b = 20;
+if (a > b) {
+  console.log("A is Greater");
+} else {
+  console.log("B is Greater");
+}
+
+//-----------------------------------------------------
+// 6. Compare Two Strings (Equal or Not)
+//-----------------------------------------------------
+let s1 = "apple";
+let s2 = "apple";
+if (s1 === s2) {
+  console.log("Strings are Equal");
+} else {
+  console.log("Strings are Not Equal");
+}
+
+//-----------------------------------------------------
+// 7. Check Multiples of 5
+//-----------------------------------------------------
+let val = 45;
+if (val % 5 === 0) {
+  console.log("Multiple of 5");
+} else {
+  console.log("Not a Multiple of 5");
+}
+
+//-----------------------------------------------------
+// 8. Check if Number is Zero
+//-----------------------------------------------------
+let number = 0;
+if (number === 0) {
+  console.log("Zero");
+} else {
+  console.log("Not Zero");
+}
+
+//-----------------------------------------------------
+// 9. Marks Pass/Fail (>=35 Pass)
+//-----------------------------------------------------
+let marks = 60;
+if (marks >= 35) {
+  console.log("Pass");
+} else {
+  console.log("Fail");
+}
+
+//-----------------------------------------------------
+// 10. Temperature Check
+// <20 = Cold, 20–30 = Warm, >30 = Hot
+//-----------------------------------------------------
+let temp = 28;
+if (temp < 20) {
+  console.log("Cold");
+} else if (temp <= 30) {
+  console.log("Warm");
+} else {
+  console.log("Hot");
+}
+
+//-----------------------------------------------------
+// 11. Largest of Three Numbers
+//-----------------------------------------------------
+let x = 50, y = 70, z = 40;
+if (x > y && x > z) {
+  console.log("X is largest");
+} else if (y > x && y > z) {
+  console.log("Y is largest");
+} else {
+  console.log("Z is largest");
+}
+
+//-----------------------------------------------------
+// 12. Check Leap Year
+// Rule: divisible by 4 AND not by 100 OR divisible by 400
+//-----------------------------------------------------
+let year = 2024;
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log("Leap Year");
+} else {
+  console.log("Not a Leap Year");
+}
+
+//-----------------------------------------------------
+// 13. Character Type (Vowel / Consonant / Number / Special)
+//-----------------------------------------------------
+let ch = "a";
+if ("aeiouAEIOU".includes(ch)) {
+  console.log("Vowel");
+} else if (ch >= "0" && ch <= "9") {
+  console.log("Number");
+} else if ((ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z")) {
+  console.log("Consonant");
+} else {
+  console.log("Special Character");
+}
+
+//-----------------------------------------------------
+// 14. Login Check
+//-----------------------------------------------------
+let username = "admin";
+let password = "1234";
+if (username === "admin" && password === "1234") {
+  console.log("Login Successful");
+} else {
+  console.log("Invalid Credentials");
+}
+
+//-----------------------------------------------------
+// 15. Grade Check
+//-----------------------------------------------------
+let score = 85;
+if (score >= 90) {
+  console.log("A Grade");
+} else if (score >= 80) {
+  console.log("B Grade");
+} else if (score >= 70) {
+  console.log("C Grade");
+} else {
+  console.log("Fail");
+}
+
+//-----------------------------------------------------
+// 16. Number Sign + Even/Odd
+//-----------------------------------------------------
+let numX = 9;
+if (numX > 0 && numX % 2 === 0) {
+  console.log("Positive Even");
+} else if (numX > 0 && numX % 2 !== 0) {
+  console.log("Positive Odd");
+} else {
+  console.log("Negative Number");
+}
+
+//-----------------------------------------------------
+// 17. Check String Valid or Not
+//-----------------------------------------------------
+let str = "Hello";
+if (typeof str === "string" && str !== "") {
+  console.log("Valid String");
+} else {
+  console.log("Invalid String");
+}
+
+//-----------------------------------------------------
+// 18. Discount Calculation
+//-----------------------------------------------------
+let price = 600;
+if (price > 1000) {
+  console.log("20% Discount");
+} else if (price > 500) {
+  console.log("10% Discount");
+} else {
+  console.log("No Discount");
+}
+
+//-----------------------------------------------------
+// 19. Compare == and ===
+//-----------------------------------------------------
+let v1 = 10;
+let v2 = "10";
+if (v1 == v2) {
+  console.log("== : Values are equal (type not checked)");
+}
+if (v1 === v2) {
+  console.log("=== : Strict equal");
+} else {
+  console.log("=== : Values NOT strictly equal");
+}
+
+//-----------------------------------------------------
+// 20. Simple Calculator Using If-Else
+//-----------------------------------------------------
+let numA = 10;
+let numB = 5;
+let op = "+";
+if (op === "+") console.log(numA + numB);
+else if (op === "-") console.log(numA - numB);
+else if (op === "*") console.log(numA * numB);
+else if (op === "/") console.log(numA / numB);
+else console.log("Invalid Operator");
+
+    </script>
+ </body>
+ </html>
