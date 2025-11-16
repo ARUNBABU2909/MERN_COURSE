@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = ["apple", "banana", "orange", "mango", "grapes"];
+a.push("kiwi");
+console.log(a);
+
+let a2 = ["apple", "banana", "orange"];
+a2.pop();
+console.log(a2);
+
+let a3 = ["banana", "orange"];
+a3.unshift("apple");
+console.log(a3);
+
+let a4 = ["apple", "banana", "orange"];
+a4.shift();
+console.log(a4);
+
+let a5 = ["a", "b", "c", "d"];
+console.log(a5.length);
+
+let a6 = ["apple", "banana", "orange"];
+console.log(a6.join(", "));
+
+let a7 = ["red", "blue", "green"];
+console.log(a7[a7.length - 1]);
+
+let a8 = ["Ajay", "Bala", "Charan"];
+a8.push("Deepa", "Elan");
+a8.shift();
+console.log(a8);
+
+let a9 = ["apple", "banana", "orange"];
+console.log("I like " + a9.join(", "));
+
+let a10 = [];
+a10.push("task1");
+a10.push("task2");
+a10.pop();
+console.log(a10);
+
+let a11 = ["cat", "dog", "lion"];
+console.log(a11.includes("dog"));
+
+let a12 = ["cat", "dog", "lion"];
+console.log(a12.indexOf("cat"));
+
+console.log([1, 2, 3].concat([4, 5, 6]));
+
+console.log(["a", "b"].concat(["c", "d"]));
+
+let a15 = ["cat", "dog"];
+if (!a15.includes("lion")) a15.push("lion");
+console.log(a15);
+
+console.log(["Madurai", "Chennai", "Trichy"].indexOf("Chennai"));
+
+console.log(["a", "b"].concat(["c", "d"], ["e", "f"]));
+
+console.log(["apple", "orange"].includes("watermelon"));
+
+console.log([3, 1].concat([5, 2]).sort());
+
+console.log(["tam"].concat(["eng"], ["math"]));
+
+console.log([10, 20, 30, 40, 50].slice(1, 4));
+
+let a22 = ["apple", "banana", "cherry"];
+a22.splice(1, 1);
+console.log(a22);
+
+let a23 = ["apple", "cherry"];
+a23.splice(1, 0, "grape");
+console.log(a23);
+
+console.log([5, 10, 15, 20, 25].slice(0, 3));
+
+let a25 = ["cat", "dog", "lion"];
+a25.splice(1, 1, "tiger");
+console.log(a25);
+
+let a26 = [1, 2, 3, 4, 5];
+a26.splice(2, 2);
+console.log(a26);
+
+let a27 = ["red", "green", "blue"];
+a27.splice(1, 0, "yellow", "black");
+console.log(a27);
+
+console.log([1, 2, 3, 4, 5].slice(-2));
+
+let a29 = [1, 2, 3];
+let b29 = a29.slice();
+console.log(b29);
+
+let a30 = [10, 20, 30];
+let b30 = a30.slice();
+b30.push(40);
+console.log(a30, b30);
+
+[10, 20, 30, 40].forEach((n) => console.log(n));
+
+console.log([1, 2, 3, 4, 5].map((n) => n * 2));
+
+console.log(["ajay", "bala"].map((n) => n.toUpperCase()));
+
+console.log([10, 15, 20, 25, 30].filter((n) => n % 2 == 0));
+
+console.log(["Ajay", "Bala", "Anu", "Deepa"].filter((n) => !n.startsWith("A")));
+
+["Ajay", "Bala"].forEach((n) => console.log("Student: " + n));
+
+console.log([2, 4, 6, 8].map((n) => n * n));
+
+console.log([10, -5, 8, -3, 12].filter((n) => n >= 0));
+
+console.log(["Ajay", "Bala"].map((n) => "Mr./Ms. " + n));
+
+console.log([40, 55, 75, 90, 35].filter((n) => n >= 50));
+
+console.log([5, 10, 15, 20].reduce((a, b) => a + b));
+
+console.log([2, 3, 4, 5].reduce((a, b) => a * b));
+
+console.log([30, 10, 50, 20, 40].sort((a, b) => a - b));
+
+console.log([1, 2, 3, 4, 5].reverse());
+
+console.log([10, 60, 30, 80, 40].find((n) => n > 50));
+
+console.log([10, 50, 80, 30].some((n) => n > 100));
+console.log([2, 4, 6, 8].every((n) => n > 0));
+
+console.log(["Bala", "Ajay", "Dinesh"].sort());
+
+console.log(["Bala", "Ajay", "Dinesh"].sort().reverse());
+
+let e = [1, 2, 3, 4, 5, 6, 7, 8].filter((n) => n % 2 == 0);
+console.log(e.reduce((a, b) => a + b));
+
+    </script>
+</body>
+</html>m
