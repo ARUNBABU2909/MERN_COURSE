@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Count vowels
+let str1 = "hello world";
+let count1 = 0;
+for (let i = 0; i < str1.length; i++) {
+    let ch = str1[i].toLowerCase();
+    if (ch=="a"||ch=="e"||ch=="i"||ch=="o"||ch=="u") count1++;
+}
+console.log(count1);
+
+// 2. Reverse string
+let str2 = "hello";
+let rev2 = "";
+for (let i = str2.length-1; i>=0; i--) rev2 += str2[i];
+console.log(rev2);
+
+// 3. Palindrome
+let str3 = "level";
+let rev3 = "";
+for (let i=str3.length-1; i>=0; i--) rev3 += str3[i];
+console.log(str3 === rev3 ? "Palindrome":"Not");
+
+// 4. Capitalize each word
+let str4 = "hello world program";
+let arr4 = str4.split(" ");
+let out4 = "";
+for (let i=0;i<arr4.length;i++){
+    out4 += arr4[i][0].toUpperCase() + arr4[i].slice(1) + " ";
+}
+console.log(out4.trim());
+
+// 5. Replace spaces with -
+let str5 = "hello world";
+let out5 = "";
+for (let i=0;i<str5.length;i++){
+    out5 += (str5[i]==" ")? "-" : str5[i];
+}
+console.log(out5);
+
+// 6. Count word occurrences
+let sen6 = "apple orange apple apple";
+let word6 = "apple";
+let c6 = 0;
+let a6 = sen6.split(" ");
+for (let i=0;i<a6.length;i++){ if(a6[i]==word6) c6++; }
+console.log(c6);
+
+// 7. Extract digits
+let str7 = "ab12cd34";
+let dig7 = "";
+for (let i=0;i<str7.length;i++){
+    if(!isNaN(str7[i]) && str7[i]!=" ") dig7 += str7[i];
+}
+console.log(dig7);
+
+// 8. Case-insensitive contains
+let s8 = "Hello WORLD";
+let sub8 = "world";
+console.log(s8.toLowerCase().includes(sub8.toLowerCase()));
+
+// 9. Trim spaces
+let str9 = "   hello world   ";
+console.log(str9.trim());
+
+// 10. Character count
+let str10 = "hello";
+let obj10 = {};
+for (let i=0;i<str10.length;i++){
+    let ch = str10[i];
+    obj10[ch] = (obj10[ch]||0)+1;
+}
+console.log(obj10);
+
+// 11. Longest word
+let sen11 = "javascript is powerful";
+let words11 = sen11.split(" ");
+let long11 = "";
+for (let i=0;i<words11.length;i++){
+    if(words11[i].length > long11.length) long11 = words11[i];
+}
+console.log(long11);
+
+// 12. Anagram check
+let a12 = "listen".split("").sort().join("");
+let b12 = "silent".split("").sort().join("");
+console.log(a12===b12 ? "Anagram":"Not");
+
+// 13. hello_world_program -> Hello World Program
+let s13 = "hello_world_program".split("_");
+let out13 = "";
+for (let i=0;i<s13.length;i++){
+    out13 += s13[i][0].toUpperCase() + s13[i].slice(1) + " ";
+}
+console.log(out13.trim());
+
+// 14. Index of second occurrence
+let s14 = "javascript";
+let l14 = "a";
+let cnt14 = 0;
+let idx14 = -1;
+for (let i=0;i<s14.length;i++){
+    if(s14[i]==l14){
+        cnt14++;
+        if(cnt14==2) idx14 = i;
+    }
+}
+console.log(idx14);
+
+// 15. Remove duplicate chars
+let s15 = "programming";
+let out15 = "";
+for (let i=0;i<s15.length;i++){
+    if(!out15.includes(s15[i])) out15 += s15[i];
+}
+console.log(out15);
+
+    </script>
+</body>
+</html>
