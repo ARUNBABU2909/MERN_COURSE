@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+ 
+
+// FULL LOOP TASKS (FOR, WHILE, DO-WHILE)
+// All questions covered with simple beginner-friendly code
+
+//------------------------------------------------------
+// FOR LOOP TASKS
+//------------------------------------------------------
+
+// 1. Print numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// 2. Print even numbers between 1 and 20
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) console.log(i);
+}
+
+// 3. Multiplication table of 5
+for (let i = 1; i <= 10; i++) {
+  console.log(`5 x ${i} = ${5 * i}`);
+}
+
+// 4. Sum of numbers 1 to 100
+let sum = 0;
+for (let i = 1; i <= 100; i++) {
+  sum += i;
+}
+console.log("Sum =", sum);
+
+// 5. Print array elements
+let arr = [10, 20, 30, 40];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+// 6. Factorial of a number
+let n = 5;
+let fact = 1;
+for (let i = 1; i <= n; i++) {
+  fact *= i;
+}
+console.log("Factorial =", fact);
+
+// 7. Odd numbers 1 to 50
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 !== 0) console.log(i);
+}
+
+// 8. Reverse a string
+let text = "hello";
+let rev = "";
+for (let i = text.length - 1; i >= 0; i--) {
+  rev += text[i];
+}
+console.log(rev);
+
+// 9. Count vowels in string
+let str = "javascript";
+let vowels = 0;
+for (let i = 0; i < str.length; i++) {
+  if ("aeiou".includes(str[i])) vowels++;
+}
+console.log("Vowels =", vowels);
+
+// 10. Squares of numbers 1 to 10
+for (let i = 1; i <= 10; i++) {
+  console.log(i * i);
+}
+
+//------------------------------------------------------
+// WHILE LOOP TASKS
+//------------------------------------------------------
+
+// 1. Print numbers 1 to 10
+let i = 1;
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+// 2. Sum of digits
+let num = 1234;
+let total = 0;
+while (num > 0) {
+  total += num % 10;
+  num = Math.floor(num / 10);
+}
+console.log("Sum of digits =", total);
+
+// 3. Numbers divisible by 3 between 1 and 50
+let x = 1;
+while (x <= 50) {
+  if (x % 3 === 0) console.log(x);
+  x++;
+}
+
+// 4. Factorial using while
+let number = 5;
+let f = 1;
+let k = 1;
+while (k <= number) {
+  f *= k;
+  k++;
+}
+console.log("Factorial =", f);
+
+// 5. Reverse a number
+let num2 = 123;
+let revNum = 0;
+while (num2 > 0) {
+  revNum = revNum * 10 + (num2 % 10);
+  num2 = Math.floor(num2 / 10);
+}
+console.log("Reversed Number =", revNum);
+
+// 6. Fibonacci series up to 10 terms
+let a = 0, b = 1, temp;
+let count = 1;
+while (count <= 10) {
+  console.log(a);
+  temp = a + b;
+  a = b;
+  b = temp;
+  count++;
+}
+
+// 7. Count digits in a number
+let value = 98765;
+let digits = 0;
+while (value > 0) {
+  value = Math.floor(value / 10);
+  digits++;
+}
+console.log("Digits =", digits);
+
+// 8. Largest digit in a number
+let numX = 49583;
+let largest = 0;
+while (numX > 0) {
+  let r = numX % 10;
+  if (r > largest) largest = r;
+  numX = Math.floor(numX / 10);
+}
+console.log("Largest digit =", largest);
+
+// 9. Print elements of an array
+let arr2 = [5, 10, 15];
+let idx = 0;
+while (idx < arr2.length) {
+  console.log(arr2[idx]);
+  idx++;
+}
+
+//------------------------------------------------------
+// DO...WHILE LOOP TASKS
+//------------------------------------------------------
+
+// 1. Print numbers 1 to 10
+i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+
+// 2. Display menu (simulation)
+let option = 1;
+do {
+  console.log("Menu Display...");
+  option++;
+} while (option <= 3);
+
+// 3. Multiplication table of a number
+let t = 4;
+let m = 1;
+do {
+  console.log(`${t} x ${m} = ${t * m}`);
+  m++;
+} while (m <= 10);
+
+// 4. Sum of natural numbers up to n
+let limit = 5;
+let s = 0;
+let q = 1;
+do {
+  s += q;
+  q++;
+} while (q <= limit);
+console.log("Sum =", s);
+
+// 5. Password retry simulation
+let pwd = "1234";
+let input = "1111";
+do {
+  console.log("Wrong Password...");
+  input = "1234"; // Simulated user correction
+} while (input !== pwd);
+console.log("Access Granted");
+    </script>
+</body>
+</html>
