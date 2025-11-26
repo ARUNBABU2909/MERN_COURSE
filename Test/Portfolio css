@@ -1,0 +1,71 @@
+* {
+  margin: 20px;
+  padding: 10px;
+  color: white;
+}
+body {
+  background-image: url("assets/bgimage.webp");
+ background-size: cover;
+ background-color: black;
+}
+.nav {
+  width: 1200px;
+  justify-content: space-evenly;
+  height: 70px;
+  display: flex;
+  background-color: black;
+  display: sticky;
+  top: 20px;
+
+  background-size: cover;
+}
+span {
+  color: green;
+  font-weight: 400;
+  font-size: x-large;
+  font-family: fantasy;
+}
+.home {
+  color: green;
+  font-weight: bold;
+}
+a {
+  font-size: larger;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+a:hover {
+  color: green;
+  font-size: x-large;
+  cursor: pointer;
+  border-image: linear-gradient(45deg,red,yellow,blue)1;
+}
+.main {
+  width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.con1 h1 {
+  color: green;
+}
+.image img {
+  width: 240px;
+  height: 340px;
+  border-radius: 50px;
+  background: linear-gradient(to right,red,green,blue,yellow,orange);
+transition: 3s;
+}
+.con1 button {
+  background-color: green;
+  color: white;
+  border-radius: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+button:hover {
+  font-size: x-large;
+  transition: 0.5s;
+}
