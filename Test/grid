@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3x3 Grid with Row Span</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#f6f8fb;
+      font-family:system-ui,Arial,sans-serif;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 150px);
+      grid-template-rows:repeat(3, 150px);
+      gap:10px;
+    }
+
+    .box{
+      background:#dce6ff;
+      border-radius:10px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:1.5rem;
+      font-weight:700;
+      transition:background .4s ease;
+    }
+
+    .box:hover{
+      background:#4c7ef3;
+      color:white;
+    }
+
+  
+    .middle{
+      grid-row:span 2;
+      background:#c9d8ff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box middle">M</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+  </div>
+</body>
+</html>
